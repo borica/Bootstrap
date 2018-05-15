@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/card.css">
+        <title>Cadastro!</title>
+        <style>
+            body {
+                background-color: #fff;
+            }
+            .mainRow{
+                height: 100vh;
+            }
+            .signUpCard{
+                height: 40vh;
+                min-height: 350px;
+                min-width:  469px;
+                width: 95%;
+                height: 70%;
+            }
+            .verticalAlign{
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            .hidden{
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row mainRow">
+                <div class="card text-center verticalAlign mx-auto signUpCard">
+                    <div id="cardSignupHeader" class="card-header"></div>
+                    
+                    <div class="card-body">
+                        <!-- First Step -->
+                        <div id="first-step-form" class="stepsActive">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img src="https://t7.rbxcdn.com/ea470944377e409934e6b36da834196c" class="img-fluid">
+                                </div>
+                                <div class="col-md-6">
+                                    <form class="needs-validation">
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <input type="text" class="form-control" placeholder="Nome">
+                                            </div>
+                                            <div class="col">
+                                                <input type="text" class="form-control" placeholder="Sobrenome">
+                                            </div>
+                                        </div>
+                                        <div class="mt-2"></div>
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                            </div>    
+                                        </div>
+                                        <div class="form-row mt-2">
+                                            <input type="text" class="form-control" placeholder="Data de Nascimento">
+                                        </div>
+                                        <div class="form-row mt-3  justify-content-center">
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadioInline1">Masculino</label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadioInline2">Feminino</label>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Second Step -->
+                        <div id="second-step-form" class="hidden">
+                            <div  class="row">
+                                 <div class="col-md-6">
+                                     <div class="row">
+                                        <div class="col-md-12 mt-2">
+                                             <div class="card-wrapper align-self-center"></div>
+                                        </div>
+                                        <div class="col-md-12 mt-2"><hr></div>
+                                        <div class="col-md-12 mt-2 ">
+                                             <form id="formControl">
+                                                <div class="form-row">
+                                                    <div class="col-md-8">
+                                                        <input class="form-control" id="cardNumber" placeholder="Número do Cartão" type="tel" name="number">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <input class="form-control" id="expiration" placeholder="Validade" type="tel" name="expiry">
+                                                    </div>
+                                                </div>
+                                                <div class="form-row mt-2">
+                                                    <div class="col-md-10">
+                                                        <input class="form-control" id="fullName" placeholder="Nome do Titular" type="text" name="name">
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <input class="form-control" id="cvc" placeholder="CVC" type="number" name="cvc">
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                     </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <form>
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <input type="text" class="form-control" placeholder="CPF">
+                                            </div>
+                                            <div class="col">
+                                                <input type="text" class="form-control" placeholder="CEP">
+                                            </div>
+                                        </div>
+                                        <div class="mt-2"></div>
+                                        <div class="form-row">
+                                            <div class="col-md-9">
+                                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Logradouro">
+                                            </div>    
+                                            <div class="col-md-3">
+                                                <input type="text" class="form-control" placeholder="Número">
+                                            </div>    
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Third Step -->
+                        <div id="third-step-form" class="hidden">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img src="https://vignette.wikia.nocookie.net/meme-battles/images/b/bb/Shiba_Inu.png/revision/latest?cb=20161013235502" class="img-fluid">
+                                </div>
+                                <div class="col-md-6">
+                                    <form>
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <input type="text" class="form-control" placeholder="Nome">
+                                            </div>
+                                            <div class="col">
+                                                <input type="text" class="form-control" placeholder="Sobrenome">
+                                            </div>
+                                        </div>
+                                        <div class="mt-2"></div>
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                            </div>    
+                                        </div>
+                                        <div class="form-row mt-2">
+                                            <input type="text" class="form-control" placeholder="Data de Nascimento">
+                                        </div>
+                                        <div class="form-row mt-3 justify-content-center">
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input class="customRadioInline1" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                <label class="custom-control-label" for="inlineRadio1">Masculino</label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input class="customRadioInline1" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                                <label class="custom-control-label" for="inlineRadio2">Feminino</label>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-end fixed-bottom mb-4">
+                            <div class="col-md-6">
+                                <button id="btn-back" type="button" class="btn btn-secondary invisible mb-4 w-75 btn-sm">Voltar</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button id="btn-next" type="button" class="btn btn-primary mb-4 w-75 btn-sm">Continuar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer text-muted">
+                        <div class="progress" style="height: 15px">
+                            <div id="progressStepOne" class="progress-bar w-25" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Dados Pessoais</div>
+                            <div id="progressStepTwo" class="progress-bar bg-warning w-50 invisible" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Dados Bancários</div>
+                            <div id="progressStepThree" class="progress-bar w-25 invisible" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Dados Corporais</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="assets/card.js"></script>    
+        <script src="assets/formJs.js"></script>
+    </body>
+</html>
